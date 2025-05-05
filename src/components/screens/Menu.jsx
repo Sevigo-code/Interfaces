@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import BearCharacter from '../common/BearCharacter';
 
 const Menu = () => {
   const navigate = useNavigate();
@@ -144,7 +143,7 @@ const Menu = () => {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 1.4, type: "spring", stiffness: 200 }}
       >
-        <BearCharacter />
+        
       </motion.div>
     </motion.div>
   );

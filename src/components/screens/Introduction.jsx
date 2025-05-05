@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import BearCharacter from '../common/BearCharacter';
 import NavigationButtons from '../common/NavigationButtons';
 
 const Introduction = () => {
@@ -18,7 +17,7 @@ const Introduction = () => {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
       >
-        <BearCharacter />
+      
       </motion.div>
       
       <motion.div 

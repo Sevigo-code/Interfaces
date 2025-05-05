@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import BearCharacter from '../common/BearCharacter';
 import NavigationButtons from '../common/NavigationButtons';
 
 const QuizGame = () => {
@@ -132,9 +131,7 @@ const QuizGame = () => {
         </div>
       )}
       
-      <div className="decoration bear-left">
-        <BearCharacter />
-      </div>
+     
       
       <NavigationButtons prevPath="/jakob-nielsen" nextPath={gameOver ? '/rating' : null} homePath="/menu" />
     </div>

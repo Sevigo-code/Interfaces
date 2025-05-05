@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import BearCharacter from '../common/BearCharacter';
 import NavigationButtons from '../common/NavigationButtons';
 
 const MemoryGame = () => {
@@ -94,9 +93,7 @@ const MemoryGame = () => {
         </div>
       </div>
       
-      <div className="decoration bear-left">
-        <BearCharacter withMagnifier={true} />
-      </div>
+     
       
       <NavigationButtons prevPath="/gestalt-principles" nextPath={gameCompleted ? '/rating' : null} homePath="/menu" />
       

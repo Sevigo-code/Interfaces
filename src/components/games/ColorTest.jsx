@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import BearCharacter from '../common/BearCharacter';
 import NavigationButtons from '../common/NavigationButtons';
 
 const ColorTest = () => {
@@ -77,9 +76,7 @@ const ColorTest = () => {
         </div>
       </div>
       
-      <div className="decoration bear-right">
-        <BearCharacter />
-      </div>
+      
       
       <NavigationButtons prevPath="/color-theory" nextPath={completed ? '/rating' : null} homePath="/menu" />
       

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import BearCharacter from '../common/BearCharacter';
 
 const Rating = () => {
   const [rating, setRating] = useState(5);
@@ -41,7 +40,6 @@ const Rating = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5, type: "spring" }}
       >
-        <BearCharacter />
       </motion.div>
       
       {/* Ositos decorativos */}

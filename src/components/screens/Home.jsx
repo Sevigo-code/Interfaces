@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import BearCharacter from '../common/BearCharacter';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -37,7 +36,6 @@ const Home = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
       >
-        <BearCharacter />
       </motion.div>
       
       <motion.div 

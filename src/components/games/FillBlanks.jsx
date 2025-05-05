@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import BearCharacter from '../common/BearCharacter';
 import NavigationButtons from '../common/NavigationButtons';
 
 const FillBlanks = () => {
@@ -79,9 +78,7 @@ const FillBlanks = () => {
         </div>
       </div>
       
-      <div className="decoration bear-left">
-        <BearCharacter />
-      </div>
+      
       
       <NavigationButtons prevPath="/wireframes" nextPath={completed ? '/rating' : null} homePath="/menu" />
       

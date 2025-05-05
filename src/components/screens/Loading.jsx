@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import BearCharacter from '../common/BearCharacter';
 
 const Loading = () => {
   const location = useLocation();
@@ -107,7 +106,7 @@ const Loading = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 1, type: "spring", stiffness: 200 }}
       >
-        <BearCharacter />
+        
       </motion.div>
     </motion.div>
   );

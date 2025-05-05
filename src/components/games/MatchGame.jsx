@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import BearCharacter from '../common/BearCharacter';
 import NavigationButtons from '../common/NavigationButtons';
 
 const MatchGame = () => {
@@ -119,9 +118,7 @@ const MatchGame = () => {
         </div>
       </div>
       
-      <div className="decoration bear-right">
-        <BearCharacter />
-      </div>
+     
       
       <NavigationButtons prevPath="/data-collection" nextPath={completed ? '/rating' : null} homePath="/menu" />
       
