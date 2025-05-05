@@ -1,9 +1,10 @@
 /* Estilos generales */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif'
   }
   
   body {
@@ -183,79 +184,7 @@
     transform: translateX(-50%) scale(1.05);
   }
   
-  /* Bear Character */
-  .bear-character {
-    position: relative;
-    width: 8rem;
-    height: 8rem;
-  }
-  
-  .bear-head {
-    width: 8rem;
-    height: 8rem;
-    background-color: #d3d3d3;
-    border-radius: 50%;
-    position: relative;
-  }
-  
-  .bear-ear {
-    width: 2rem;
-    height: 2rem;
-    background-color: #808080;
-    border-radius: 50%;
-    position: absolute;
-    top: 0.5rem;
-  }
-  
-  .bear-ear.left {
-    left: 0.5rem;
-  }
-  
-  .bear-ear.right {
-    right: 0.5rem;
-  }
-  
-  .bear-eye {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: black;
-    border-radius: 50%;
-    position: absolute;
-    top: 3.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .bear-nose {
-    width: 2.5rem;
-    height: 1rem;
-    background-color: #ffc0cb;
-    border-radius: 50%;
-    position: absolute;
-    top: 6rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .bear-mouth {
-    width: 4rem;
-    height: 1.5rem;
-    border-bottom: 1px solid black;
-    position: absolute;
-    top: 4rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .bear-glasses {
-    width: 4rem;
-    height: 1.5rem;
-    border: 0.25rem solid black;
-    position: absolute;
-    top: 4rem;
-    left: 2rem;
-    border-radius: 50%;
-  }
+ 
   
   .magnifier {
     position: absolute;
@@ -317,11 +246,7 @@
     right: 2rem;
   }
   
-  .bear-center, .bear-top {
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+ 
   
   /* Pantalla de inicio */
   .content-box {

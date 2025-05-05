@@ -1,0 +1,28 @@
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/Images/background.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 0; 
+    font-family: 'BryndanWrite';
+    
+  }
+  
+  .screen.home-screen {
+    position: relative;
+    z-index: 1;
+    background: transparent; 
+  }
+  
+
+  @font-face {
+    font-family: 'BryndanWrite';
+    src: url('../../../public/fonts/BryndanWrite.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

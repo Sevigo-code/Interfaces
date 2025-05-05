@@ -28,6 +28,7 @@ const App = () => {
   return (
     <Router>
       <AnimatePresence mode="wait">
+        <div className='background-container'>
         <div className="app-container">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -47,6 +48,7 @@ const App = () => {
             <Route path="/fill-blanks" element={<FillBlanks />} />
             <Route path="/rating" element={<Rating />} />
           </Routes>
+        </div>
         </div>
       </AnimatePresence>
     </Router>

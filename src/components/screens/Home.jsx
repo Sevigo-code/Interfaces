@@ -1,110 +1,117 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import '../styles/Home.css';
+
+
 
 const Home = () => {
   const navigate = useNavigate();
   
   return (
-    <motion.div 
-      className="screen home-screen"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.6 }}
-    >
+    <div className='background-container'>
       <motion.div 
-        className="decoration top-left"
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
+        className="screen home-screen"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}    
+        transition={{ duration: 0.6 }}
+        
       >
-        <div className="apple-icon"></div>
-      </motion.div>
       
-      <motion.div 
-        className="decoration top-right"
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.4, type: "spring", stiffness: 200 }}
-      >
-        <div className="pencil-icon"></div>
-      </motion.div>
-      
-      <motion.div 
-        className="decoration bottom-left"
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
-      >
-      </motion.div>
-      
-      <motion.div 
-        className="decoration bottom-right"
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.6, type: "spring", stiffness: 200 }}
-      >
-        <div className="globe-icon"></div>
-      </motion.div>
-      
-      <motion.div 
-        className="content-box"
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 0.2, type: "spring", stiffness: 100 }}
-      >
-        <motion.h1 
-          className="colorful-title"
-          initial={{ y: -20, opacity: 0 }}
+        <motion.div 
+          className="decoration top-left"
+          initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.7, duration: 0.5 }}
+          transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
         >
-          <span className="cyan">P</span>
-          <span className="yellow">I</span>
-          <span className="black">X</span>
-          <span className="pink">E</span>
-          <span className="blue">L</span>
-          <span className="spacer"></span>
-          <span className="red">P</span>
-          <span className="blue">O</span>
-          <span className="green">W</span>
-          <span className="purple">E</span>
-          <span className="yellow">R</span>
-        </motion.h1>
-        <motion.h2 
-          className="subtitle"
-          initial={{ y: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.9, duration: 0.5 }}
-        >
-          DOMINANDO EL COLOR <br/> Y LA FORMA
-        </motion.h2>
+          <div className="apple-icon"></div>
+        </motion.div>
         
         <motion.div 
-          className="button-container"
+          className="decoration top-right"
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.4, type: "spring", stiffness: 200 }}
+        >
+          <div className="pencil-icon"></div>
+        </motion.div>
+        
+        <motion.div 
+          className="decoration bottom-left"
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
+        >
+        </motion.div>
+        
+        <motion.div 
+          className="decoration bottom-right"
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.6, type: "spring", stiffness: 200 }}
+        >
+          <div className="globe-icon"></div>
+        </motion.div>
+        
+        <motion.div 
+          className="content-box"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 1.1, type: "spring" }}
+          transition={{ delay: 0.2, type: "spring", stiffness: 100 }}
         >
-          <motion.button 
-            onClick={() => navigate("/welcome")}
-            className="start-button"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            animate={{
-              scale: [1, 1.05, 1],
-              transition: { 
-                duration: 2,
-                repeat: Infinity,
-                repeatType: "reverse"
-              }
-            }}
+          <motion.h1 
+            className="colorful-title"
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.7, duration: 0.5 }}
           >
-            START
-          </motion.button>
+            <span className="cyan">P</span>
+            <span className="yellow">I</span>
+            <span className="black">X</span>
+            <span className="pink">E</span>
+            <span className="blue">L</span>
+            <span className="spacer"></span>
+            <span className="red">P</span>
+            <span className="blue">O</span>
+            <span className="green">W</span>
+            <span className="purple">E</span>
+            <span className="yellow">R</span>
+          </motion.h1>
+          <motion.h2 
+            className="subtitle"
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.9, duration: 0.5 }}
+          >
+            DOMINANDO EL COLOR <br/> Y LA FORMA
+          </motion.h2>
+          
+          <motion.div 
+            className="button-container"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 1.1, type: "spring" }}
+          >
+            <motion.button 
+              onClick={() => navigate("/welcome")}
+              className="start-button"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              animate={{
+                scale: [1, 1.05, 1],
+                transition: { 
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "reverse"
+                }
+              }}
+            >
+              START
+            </motion.button>
+          </motion.div>
         </motion.div>
       </motion.div>
-    </motion.div>
+    </div>
   );
 };
 
