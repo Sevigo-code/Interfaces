@@ -260,6 +260,17 @@ const Rating = () => {
           color: #4a90e2;
           font-weight: bold;
         }
+        
+        .home-button {
+          margin: 0 auto;
+          display: block;
+        }
+        
+        .button-content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       `}</style>
     </motion.div>
   );
