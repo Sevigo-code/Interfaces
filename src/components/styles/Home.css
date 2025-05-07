@@ -26,3 +26,17 @@
     font-style: normal;
   }
   
+.question-counter {
+  background: #fff;
+  color: #222;
+  font-family: 'BryndanWrite', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  display: inline-block;
+}
+  
