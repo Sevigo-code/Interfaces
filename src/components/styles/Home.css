@@ -1,3 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.intro-image {
+  max-width: 500px;
+  
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.colorful-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  p {
+    margin-bottom: 4rem;
+  }
+ 
+}
+
 .background-container {
     position: fixed;
     top: 0;
@@ -9,6 +43,7 @@
     background-position: center;
     z-index: 0; 
     font-family: 'BryndanWrite';
+    
     
   }
   
@@ -26,3 +61,69 @@
     font-style: normal;
   }
   
+.bear {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 300px;
+    transform: translate(-20px, 80px);
+
+  }
+  
+  .apple {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 250px;
+    transform: translate(-20px, 70px);
+
+  }
+
+  .crayon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 250px;
+    transform: translate(-20px, 70px);
+
+  }
+
+  .bear1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 300px;
+    transform: translate(-20px, 80px);
+
+  }
+  
+  .apple1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 250px;
+    transform: translate(-20px, 70px);
+
+  }
+
+  .crayon1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 250px;
+    transform: translate(-20px, 70px);
+
+  }
+
+  .crayon3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 250px;
+    transform: translate(-20px, 0px);
+
+  }
+
+
+
+

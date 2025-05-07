@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import '../styles/Home.css';
 
 const Menu = () => {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ const Menu = () => {
   
   return (
     <motion.div 
-      className="screen menu-screen"
+      className="screen home-screen"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}

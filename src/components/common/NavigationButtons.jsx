@@ -17,7 +17,7 @@ const NavigationButtons = ({ prevPath, nextPath, homePath }) => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          <span className="arrow-left">&lt;&lt;</span> PREV
+          <span className="arrow-left"></span> PREV
         </motion.button>
       )}
       
@@ -51,7 +51,7 @@ const NavigationButtons = ({ prevPath, nextPath, homePath }) => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          NEXT <span className="arrow-right">&gt;&gt;</span>
+          NEXT <span className="arrow-right"></span>
         </motion.button>
       )}
     </div>

@@ -2,6 +2,9 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import '../styles/Home.css';
+import bear from "../../../src/assets/Images/bear.png";
+import crayon from "../../../src/assets/Images/crayon.png";
+import apple from "../../../src/assets/Images/apple.png";
 
 
 
@@ -9,6 +12,7 @@ const Home = () => {
   const navigate = useNavigate();
   
   return (
+   
     <div className='background-container'>
       <motion.div 
         className="screen home-screen"
@@ -17,42 +21,12 @@ const Home = () => {
         transition={{ duration: 0.6 }}
         
       >
-      
-        <motion.div 
-          className="decoration top-left"
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
-        >
-          <div className="apple-icon"></div>
-        </motion.div>
+
+    <img src={bear} alt="Bear" className='bear' />          
+    <img src={apple} alt="Apple" className='apple' />     
+    <img src={crayon} alt="Crayon" className='crayon' />     
         
-        <motion.div 
-          className="decoration top-right"
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.4, type: "spring", stiffness: 200 }}
-        >
-          <div className="pencil-icon"></div>
-        </motion.div>
-        
-        <motion.div 
-          className="decoration bottom-left"
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
-        >
-        </motion.div>
-        
-        <motion.div 
-          className="decoration bottom-right"
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.6, type: "spring", stiffness: 200 }}
-        >
-          <div className="globe-icon"></div>
-        </motion.div>
-        
+       
         <motion.div 
           className="content-box"
           initial={{ scale: 0.8, opacity: 0 }}
@@ -111,6 +85,8 @@ const Home = () => {
           </motion.div>
         </motion.div>
       </motion.div>
+
+      
     </div>
   );
 };
