@@ -33,5 +33,13 @@
   "main": "eslint.config.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sevigo-code/Interfaces.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sevigo-code/Interfaces/issues"
+  },
+  "homepage": "https://github.com/Sevigo-code/Interfaces#readme"
 }

@@ -1,12 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Rating = () => {
-  const [rating, setRating] = useState(5);
+  const [rating, setRating] = useState(0);
   const location = useLocation();
   const navigate = useNavigate();
-  const { prevPath = '/menu', sourceTopic = 'Actividad' } = location.state || {};
+  const { prevPath = '/menu', sourceTopic = 'Actividad', score = 0, maxScore = 5 } = location.state || {};
+  
+  // Establecer automáticamente la calificación basada en el puntaje recibido
+  useEffect(() => {
+    if (score) {
+      // Asegurar que la calificación sea entre 1 y 5
+      const calculatedRating = Math.max(1, Math.min(5, score));
+      setRating(calculatedRating);
+    }
+  }, [score]);
   
   const handleRate = (stars) => {
     setRating(stars);
@@ -15,6 +24,15 @@ const Rating = () => {
   const handleFinish = () => {
     // Aquí podrías guardar la calificación si tuvieras un backend
     navigate('/menu');
+  };
+  
+  // Obtener el mensaje basado en la puntuación
+  const getRatingMessage = () => {
+    if (rating === 5) return "¡Excelente! Todas las respuestas correctas";
+    if (rating === 4) return "¡Muy bien! Casi todas correctas";
+    if (rating === 3) return "¡Bien hecho! Más de la mitad correctas";
+    if (rating === 2) return "¡Sigue intentando! Has aprendido algo";
+    return "No te rindas, puedes mejorar en el próximo intento";
   };
   
   return (
@@ -81,6 +99,15 @@ const Rating = () => {
           <span className="cyan">S</span>
         </motion.h1>
         
+        <motion.div 
+          className="score-display"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
+          <p className="score-text">{score} de {maxScore} respuestas correctas</p>
+        </motion.div>
+        
         <div className="stars-container">
           {[1, 2, 3, 4, 5].map((star) => (
             <motion.button
@@ -105,10 +132,19 @@ const Rating = () => {
         </div>
         
         <motion.div 
+          className="rating-message"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.9, duration: 0.5 }}
+        >
+          <p>{getRatingMessage()}</p>
+        </motion.div>
+        
+        <motion.div 
           className="message-text"
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.8, duration: 0.5 }}
+          transition={{ delay: 1.2, duration: 0.5 }}
         >
           <p className="colorful-title">
             <span className="pink">¡</span>
@@ -129,13 +165,13 @@ const Rating = () => {
             <span className="cyan">C</span>
             <span className="purple">U</span>
             <span className="red">E</span>
-<span className="blue">R</span>
-<span className="black">D</span>
-<span className="orange">A</span>
-<span className="spacer"></span>
-<span className="black">Q</span>
-<span className="blue">U</span>
-<span className="red">E</span>
+            <span className="blue">R</span>
+            <span className="black">D</span>
+            <span className="orange">A</span>
+            <span className="spacer"></span>
+            <span className="black">Q</span>
+            <span className="blue">U</span>
+            <span className="red">E</span>
           </p>
           
           <p className="colorful-title">
@@ -204,6 +240,38 @@ const Rating = () => {
           </div>
         </motion.button>
       </motion.div>
+      
+      <style jsx>{`
+        .score-display {
+          margin: 10px 0;
+          text-align: center;
+        }
+        
+        .score-text {
+          font-size: 20px;
+          font-weight: bold;
+          color: #333;
+        }
+        
+        .rating-message {
+          text-align: center;
+          margin: 15px 0;
+          font-size: 18px;
+          color: #4a90e2;
+          font-weight: bold;
+        }
+        
+        .home-button {
+          margin: 0 auto;
+          display: block;
+        }
+        
+        .button-content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      `}</style>
     </motion.div>
   );
 };
