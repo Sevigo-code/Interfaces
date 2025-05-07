@@ -1,0 +1,12 @@
+/* Corrección para la orientación de imágenes en ContentTemplate */
+.content-card img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  transform: none !important;
+  vertical-align: middle !important;
+  transition: none !important;
+  image-orientation: from-image !important;
+} 
