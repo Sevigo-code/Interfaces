@@ -1111,7 +1111,7 @@
     bottom: -5rem;
     max-width: 300px;
     z-index: 50;
-    animation: cicloEsquinas 20s infinite linear;
+    animation: loopBear 20s infinite linear;
     transform-origin: center;
   }
 
@@ -1119,7 +1119,7 @@
     max-width: 300px;
   }
 
-  @keyframes cicloEsquinas {
+  @keyframes loopBear {
     0% {
       transform: translate(0%, 0%) ;
       bottom: -5rem;
