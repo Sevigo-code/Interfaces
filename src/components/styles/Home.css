@@ -4,8 +4,26 @@
 }
 
 .intro-image {
-  max-width: 500px;
-  
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.intro-image img {
+  width: 85%;
+  max-width: 700px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-image img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
 }
 
 .subtitle {
@@ -43,89 +61,116 @@
     background-position: center;
     z-index: 0; 
     font-family: 'BryndanWrite';
-    
-    
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
-  .screen.home-screen {
-    position: relative;
-    z-index: 1;
-    background: transparent; 
-  }
-  
+.screen.home-screen {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  @font-face {
-    font-family: 'BryndanWrite';
-    src: url('../../../public/fonts/BryndanWrite.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+.content-box {
+  background: white;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  max-width: 85%;
+  width: 950px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.title {
+  font-size: 3.8rem;
+  margin-bottom: 35px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.welcome-text {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 95%;
+}
+
+.welcome-text p {
+  margin-bottom: 30px;
+}
+
+@font-face {
+  font-family: 'BryndanWrite';
+  src: url('../../../public/fonts/BryndanWrite.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
   
 .bear {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    max-width: 300px;
-    transform: translate(-20px, 80px);
-
-  }
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 300px;
+  transform: translate(-20px, 80px);
+}
   
-  .apple {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 250px;
-    transform: translate(-20px, 70px);
+.apple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 250px;
+  transform: translate(-20px, 70px);
+}
 
-  }
+.crayon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 250px;
+  transform: translate(-20px, 70px);
+}
 
-  .crayon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-width: 250px;
-    transform: translate(-20px, 70px);
-
-  }
-
-  .bear1 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-width: 300px;
-    transform: translate(-20px, 80px);
-
-  }
+.bear1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 300px;
+  transform: translate(-20px, 80px);
+}
   
-  .apple1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 250px;
-    transform: translate(-20px, 70px);
+.apple1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 250px;
+  transform: translate(-20px, 70px);
+}
 
-  }
+.crayon1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 250px;
+  transform: translate(-20px, 70px);
+}
 
-  .crayon1 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-width: 250px;
-    transform: translate(-20px, 70px);
-
-  }
-
-  .crayon3 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-width: 250px;
-    transform: translate(-20px, 0px);
-
-  }
-
-
-
+.crayon3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 250px;
+  transform: translate(-20px, 0px);
+}
 
 .question-counter {
   background: #fff;
@@ -139,5 +184,19 @@
   text-align: left;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   display: inline-block;
+}
+
+/* Colores para las letras del título */
+.cyan { color: #00FFFF; }
+.black { color: #000000; }
+.pink { color: #FF69B4; }
+.blue { color: #0000FF; }
+.yellow { color: #FFFF00; }
+.green { color: #00FF00; }
+.red { color: #FF0000; }
+.purple { color: #800080; }
+
+.spacer {
+  margin: 0 10px;
 }
   
