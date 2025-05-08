@@ -17,7 +17,7 @@ const NavigationButtons = ({ prevPath, nextPath, homePath }) => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          <span className="arrow-left"></span> PREV
+          <span className="arrow-left"></span> ANTERIOR
         </motion.button>
       )}
       
@@ -36,7 +36,7 @@ const NavigationButtons = ({ prevPath, nextPath, homePath }) => {
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
               <polyline points="9 22 9 12 15 12 15 22"></polyline>
             </svg>
-            <span>Home</span>
+            <span>Inicio</span>
           </span>
         </motion.button>
       )}
@@ -51,7 +51,7 @@ const NavigationButtons = ({ prevPath, nextPath, homePath }) => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          NEXT <span className="arrow-right"></span>
+          SIGUIENTE <span className="arrow-right"></span>
         </motion.button>
       )}
     </div>
