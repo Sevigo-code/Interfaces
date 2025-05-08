@@ -18,7 +18,7 @@ const Welcome = () => {
         transition={{ duration: 0.5 }}
       >
       
-        <img src={bear} alt="Bear" className='bear1' />          
+        {/* <img src={bear} alt="Bear" className='bear1' />           */}
         <img src={apple} alt="Apple" className='apple1' />     
         <img src={crayon} alt="Crayon" className='crayon1' />     
                

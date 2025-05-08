@@ -22,6 +22,7 @@ import QuizGame from './components/games/QuizGame';
 import MatchGame from './components/games/MatchGame';
 import FillBlanks from './components/games/FillBlanks';
 import Rating from './components/games/Rating';
+import Bear from './layout/bear';
 
 // App principal
 const App = () => {
@@ -30,24 +31,26 @@ const App = () => {
       <AnimatePresence mode="wait">
         <div className='background-container'>
         <div className="app-container">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/welcome" element={<Welcome />} />
-            <Route path="/introduction" element={<Introduction />} />
-            <Route path="/menu" element={<Menu />} />
-            <Route path="/loading" element={<Loading />} />
-            <Route path="/color-theory" element={<ColorTheory />} />
-            <Route path="/gestalt-principles" element={<GestaltPrinciples />} />
-            <Route path="/jakob-nielsen" element={<JakobNielsen />} />
-            <Route path="/data-collection" element={<DataCollection />} />
-            <Route path="/wireframes" element={<Wireframes />} />
-            <Route path="/memory-game" element={<MemoryGame />} />
-            <Route path="/color-test" element={<ColorTest />} />
-            <Route path="/quiz-game" element={<QuizGame />} />
-            <Route path="/match-game" element={<MatchGame />} />
-            <Route path="/fill-blanks" element={<FillBlanks />} />
-            <Route path="/rating" element={<Rating />} />
-          </Routes>
+          <Bear >
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/welcome" element={<Welcome />} />
+              <Route path="/introduction" element={<Introduction />} />
+              <Route path="/menu" element={<Menu />} />
+              <Route path="/loading" element={<Loading />} />
+              <Route path="/color-theory" element={<ColorTheory />} />
+              <Route path="/gestalt-principles" element={<GestaltPrinciples />} />
+              <Route path="/jakob-nielsen" element={<JakobNielsen />} />
+              <Route path="/data-collection" element={<DataCollection />} />
+              <Route path="/wireframes" element={<Wireframes />} />
+              <Route path="/memory-game" element={<MemoryGame />} />
+              <Route path="/color-test" element={<ColorTest />} />
+              <Route path="/quiz-game" element={<QuizGame />} />
+              <Route path="/match-game" element={<MatchGame />} />
+              <Route path="/fill-blanks" element={<FillBlanks />} />
+              <Route path="/rating" element={<Rating />} />
+            </Routes>
+          </Bear>
         </div>
         </div>
       </AnimatePresence>

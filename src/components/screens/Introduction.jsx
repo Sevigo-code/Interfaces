@@ -19,7 +19,7 @@ const Introduction = () => {
       transition={{ duration: 0.5 }}
     >
 
-        <img src={bear} alt="Bear" className='bear' />          
+        {/* <img src={bear} alt="Bear" className='bear' />           */}
         
         <img src={crayon} alt="Crayon" className='crayon3' />     
               

@@ -44,7 +44,7 @@ const Rating = () => {
 
     <div className='background-container'>
 
-      <img src={bear} alt="Bear" className='bear' />          
+      {/* <img src={bear} alt="Bear" className='bear' />           */}
       <img src={apple} alt="Apple" className='apple' />     
       <img src={crayon} alt="Crayon" className='crayon' />  
 
